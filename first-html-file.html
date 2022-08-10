@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Operation Potato Peeler</title>
+    <style>
+        /*css stuff goes here */
+        p {
+            border: 1px dashed red;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        button {
+            margin-left: 10px;
+        }
+        .hidden {
+            /*some stuff goes here*/
+
+        }
+    </style>
+</head>
+<body>
+    <p id="hideable">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci aperiam aspernatur delectus ex, fugit laborum, nam neque obcaecati optio, praesentium suscipit. Ad doloremque fugiat id in perspiciatis, reiciendis voluptatem.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci aperiam aspernatur delectus ex, fugit laborum, nam neque obcaecati optio, praesentium suscipit. Ad doloremque fugiat id in perspiciatis, reiciendis voluptatem.</p>
+
+    <button id="toggle">Toggle Paragraph</button>
+
+    <script>
+        let toggleButton = document.getElementById
+        ("toggle");
+        let paragraph = document.getElementById("hideable");
+        toggleButton.onclick = function() {
+            let classAttribute = paragraph.getAttribute("class");
+            paragraph.setAttribute("class", "hidden");
+            if (classAttribute === "hidden") {
+                paragraph.removeAttribute("class");
+            }else{
+                paragraph.setAttribute("class", "hidden")
+            }
+        }
+    </script>
+</body>
+</html>
