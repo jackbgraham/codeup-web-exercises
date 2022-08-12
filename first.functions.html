@@ -61,6 +61,10 @@
     let myAddress = houseNumber + ", " + streetName + ", " + cityUs + ", " + stateUs + ", " +zipCode;
     console.log(myAddress);
 
+    /* template literals
+let nameWithBackticks = `${myTitle}, ${myLastName}`;
+console.log(nameWithBackticks); */
+
     //string methods
     function upperCase(str) {
         return str.toUpperCase();
@@ -87,12 +91,33 @@
     }
     console.log(returnThatIndex("Q"));
 
+    /*12 August Write a function that takes two values.
+    If the values can be converted to numbers, the function should return their product.
+    Otherwise, the function should return false.
+     */
+
+   /* this is wrong the curly braces go after the parenteses in the if condition, also we need some isNaN action
+    function twoValues(x, y) {
+       let valX = parseFloat(x);
+       let valY = parseFloat(y);
+        if {
+            valX + valY = number;
+            return true;
+        }else {
+            return false
+        }
+    }
+    */
+    function twoValues(val1, val2) {
+        if (isNaN(parseFloat(val1)) || isNaN(parseFloat(val2))) {
+            return false;
+        } else {
+            return parseFloat(val1) + parseFloat(val2);
+        }
+    }
+    console.log(twoValues("20 potatoes", "23 potatoes"));
 
 
-
-    /* template literals
-    let nameWithBackticks = `${myTitle}, ${myLastName}`;
-    console.log(nameWithBackticks); */
 
 
   </script>
