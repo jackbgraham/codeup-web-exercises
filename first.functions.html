@@ -20,6 +20,81 @@
     function celciusToFahrenheit(c) {
         return (c * 1.8) + 32 + 'F';
     }
+
+    function isOdd(number) {
+        return Math.abs(number) % 2 === 1;
+    }
+
+    function divisibleByFiveOrThree(number) {
+        return number % 5 === 0 || number % 3 === 0;
+    }
+/*Mini-exercise 1*/
+    function divisibleBySevenOrThree(number) {
+        return number % 7 === 0 || number % 3 === 0;
+    }
+    /*Mini-exercise 2*/
+    function divisibleByThreeOrTwo(number) {
+        return number % 3 === 0 || number % 2 === 0;
+    }
+    /*Mini-exercise 3*/
+    function oddAndDivisibleByThree(number) {
+        return number % 2 === 1 && number % 3 === 0;
+    }
+    /*Mini-exercise 4*/
+    function oddOrDivisibleByThree(number) {
+        return number % 2 === 1 || number % 3 === 0;
+    }
+    /* concatenation */
+    //Mini-exercise 1
+    let myName = "Hingle";
+    let myLastName = "McCringleberry";
+    let myTitle = "Mr.";
+    let myMiddle = "Dingle"
+    let myFullName = myTitle + " " + myName + " " + myMiddle + " " + myLastName;
+    console.log(myFullName);
+    //Mini-exercise 2
+    let houseNumber = "123";
+    let streetName = "Alphabet ave.";
+    let cityUs = "San Spaghettino";
+    let stateUs = "Texas";
+    let zipCode = "12345-00";
+    let myAddress = houseNumber + ", " + streetName + ", " + cityUs + ", " + stateUs + ", " +zipCode;
+    console.log(myAddress);
+
+    //string methods
+    function upperCase(str) {
+        return str.toUpperCase();
+    }
+    console.log(upperCase("potato"));
+
+    function lowerCase(str) {
+        return str.toLowerCase();
+    }
+    console.log(lowerCase("POTATO"));
+
+    function snipSnip(str) {
+        return str.trim();
+    }
+    console.log(snipSnip("  eyyyy forgetaboutit   "))
+
+    function strCount(str) {
+        return str.length;
+    }
+    console.log(strCount("fear is the mind-killer, fear is the little death that brings total obliteration"));
+
+    function returnThatIndex(str) {
+        return str.indexOf("Q");
+    }
+    console.log(returnThatIndex("Q"));
+
+
+
+
+    /* template literals
+    let nameWithBackticks = `${myTitle}, ${myLastName}`;
+    console.log(nameWithBackticks); */
+
+
   </script>
 
 </body>
