@@ -2,9 +2,64 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Register With Us</title>
 </head>
 <body>
-
+<form method="GET" action="https://request-inspector.glitch.me">
+    <form method="POST" action="https://request-inspector.glitch.me/">
+        <!--username -->
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" placeholder="*required field"><br>
+        <br>
+        <!--password -->
+        <label for="password">Password:</label>
+        <input type="text" name="password" id="password" placeholder="*required field"><br>
+        <br>
+        <!--text area -->
+        <label for="bio">Biographic Blurb</label><br>
+        <textarea id="bio" name="bio" rows="10" cols="50" placeholder="write your bio here..."></textarea><br>
+        <br>
+        <!-- radio selection with field set box -->
+        <fieldset>
+            <legend>How did you hear about us?</legend>
+            <div>
+                <input type="radio" id="billboard" name="radioselect" value="billboard">
+                <label for="billboard">Billboard</label>
+                <input type="radio" id="radioad" name="radioselect" value="radioad">
+                <label for="radioad">Radio Advertisement</label>
+                <input type="radio" id="internetad" name="radioselect" value="internetad">
+                <label for="internetad">Internet Advertisement</label>
+                <input type="radio" id="other" name="radioselect" value="other">
+                <label for="other">Other</label>
+            </div>
+        </fieldset><br>
+        <!-- delete the name section on input to allow multiple options to be selected -->
+        <fieldset>
+        <legend>How did you hear about us? but with multiple selections</legend>
+        <div>
+            <input type="radio" id="billboard" value="billboard">
+            <label for="billboard">Billboard</label>
+            <input type="radio" id="radioad" value="radioad">
+            <label for="radioad">Radio Advertisement</label>
+            <input type="radio" id="internetad" value="internetad">
+            <label for="internetad">Internet Advertisement</label>
+            <input type="radio" id="other" value="other">
+            <label for="other">Other</label>
+        </div>
+        </fieldset><br>
+        <!-- dropdown menu -->
+        <label for="dropdown">What web browser are you using?</label>
+        <select id="dropdown" name="browser">
+            <option value="internetexplorer">Internet Explorer</option>
+            <option value="firefox">Firefox</option>
+            <option value="chrome">Chrome</option>
+            <option value="safari">Safari</option>
+            <option value="brave">Brave</option>
+        </select>
+        <br>
+        <br>
+        <!-- submit button -->
+        <input type="submit" value="Submit">
+    </form>
 </body>
 </html>
