@@ -1,0 +1,28 @@
+body {
+    background-color: black;
+    color: greenyellow;
+}
+
+h1 {
+    color: purple;
+}
+
+h3 {
+    color: hotpink;
+}
+
+.fancy-header {
+
+}
+
+.spaghetti {
+    color: red;
+}
+
+.marinara {
+    color: hotpink;
+}
+
+.parmesan {
+    color: aqua;
+}
