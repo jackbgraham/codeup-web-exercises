@@ -1,18 +1,28 @@
+
+
 body {
-    background-color: black;
+    /*background: repeating-radial-gradient(darkred, black 20px, darkred 20px, black 20px);*/
+    background: url(/img/adeptus-mechanicus.png), repeating-radial-gradient(darkred, black 475px);
+    background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+    background-position: center;
     color: greenyellow;
+    font-family: "Fantasy", Copperplate, serif;
 }
 
 h1 {
-    color: purple;
+    color: hotpink;
+    text-shadow: 5px 2px black;
+    text-decoration: underline red;
 }
 
 h3 {
     color: hotpink;
+    text-decoration: underline red;
 }
 
 .fancy-header {
-
+    text-align: center;
 }
 
 .spaghetti {
@@ -21,8 +31,31 @@ h3 {
 
 .marinara {
     color: hotpink;
+    text-decoration: underline;
 }
 
 .parmesan {
     color: aqua;
 }
+
+ul {
+    list-style-image: url(/img/bullet.png);
+}
+
+table, th, td {
+    border: 1px solid;
+    width: 63%;
+    text-align: center;
+    padding: 15px;
+
+}
+
+th {
+    background-color: black;
+    color: white;
+}
+/*td {*/
+/*    background-color: darkred;*/
+/*    color: white;*/
+/*}*/
+tr:hover {background-color: firebrick;}
