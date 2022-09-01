@@ -5,3 +5,40 @@ body, html {
     margin: 0;
     font-family: Arial, Ubuntu, sans-serif;
 }
+
+.message-message-info {
+    background-color: lightblue;
+    padding: 8px;
+    color: darkblue;
+    font-weight: bold;
+    border: solid 1px grey;
+    border-radius: 5px;
+    margin: 10px;
+}
+.message-message-success {
+    background-color: lightgreen;
+    padding: 8px;
+    color: darkgreen;
+    font-weight: bold;
+    border: solid 1px grey;
+    border-radius: 5px;
+    margin: 10px;
+}
+.message-message-warning {
+    background-color: lightyellow;
+    padding: 8px;
+    color: darkgoldenrod;
+    font-weight: bold;
+    border: solid 1px grey;
+    border-radius: 5px;
+    margin: 10px;
+}
+.message-message-error {
+    background-color: lightcoral;
+    padding: 8px;
+    color: firebrick;
+    font-weight: bold;
+    border: solid 1px grey;
+    border-radius: 5px;
+    margin: 10px;
+}
