@@ -27,12 +27,15 @@ a {
 }
 .top-nav {
     background: var(--light-bg);
+
 }
 .nav {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
+
+
 .nav-link {
     color: var(--main-link-color);
     font-weight: bold;
@@ -66,3 +69,4 @@ a {
 .text-muted {
     color: var(--main-link-color);
 }
+
