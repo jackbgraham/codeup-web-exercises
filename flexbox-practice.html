@@ -191,6 +191,7 @@ Notice that in all cases, the individual items stretch along the cross axis. Thi
     <div class="flex-item-Y">Item 3</div>
 </div>
 <br><br>
+<h1> ~ Baseline ~</h1>
 Another interesting value for align-items is baseline. This one is useful when the flex items have different heights and we want to center them using their text.
 <br>
 In the following example we're adding a different class with a different font size for every flex item. And we're aligning the items using its baseline.
@@ -203,5 +204,124 @@ In the following example we're adding a different class with a different font si
     <div class="flex-item-Z5">Item 5</div>
 </div>
 <br><br>
+<h1> ~ Flex Wrap ~ </h1>
+When more items are present than can fit within a flex container of a certain width, the flex-wrap property helps control how these extra items behave:
+<br>
+flex-wrap: nowrap;
+<br>
+<div class="flex-container-AA">
+    <div class="flex-item-AA">Item 1</div>
+    <div class="flex-item-AA">Item 2</div>
+    <div class="flex-item-AA">Item 3</div>
+    <div class="flex-item-AA">Item 4</div>
+    <div class="flex-item-AA">Item 5</div>
+    <div class="flex-item-AA">Item 6</div>
+    <div class="flex-item-AA">Item 7</div>
+    <div class="flex-item-AA">Item 8</div>
+    <div class="flex-item-AA">Item 9</div>
+    <div class="flex-item-AA">Item 10</div>
+    <div class="flex-item-AA">Item 11</div>
+    <div class="flex-item-AA">Item 12</div>
+    <div class="flex-item-AA">Item 13</div>
+    <div class="flex-item-AA">Item 14</div>
+</div>
+<br><br>
+flex-wrap: wrap;
+<br>
+<div class="flex-container-AB">
+    <div class="flex-item-AB">Item 1</div>
+    <div class="flex-item-AB">Item 2</div>
+    <div class="flex-item-AB">Item 3</div>
+    <div class="flex-item-AB">Item 4</div>
+    <div class="flex-item-AB">Item 5</div>
+    <div class="flex-item-AB">Item 6</div>
+    <div class="flex-item-AB">Item 7</div>
+    <div class="flex-item-AB">Item 8</div>
+    <div class="flex-item-AB">Item 9</div>
+    <div class="flex-item-AB">Item 10</div>
+    <div class="flex-item-AB">Item 11</div>
+    <div class="flex-item-AB">Item 12</div>
+    <div class="flex-item-AB">Item 13</div>
+    <div class="flex-item-AB">Item 14</div>
+</div>
+<br><br>
+<br><br>
+flex-wrap: wrap-reverse;
+<br>
+<div class="flex-container-AC">
+    <div class="flex-item-AC">Item 1</div>
+    <div class="flex-item-AC">Item 2</div>
+    <div class="flex-item-AC">Item 3</div>
+    <div class="flex-item-AC">Item 4</div>
+    <div class="flex-item-AC">Item 5</div>
+    <div class="flex-item-AC">Item 6</div>
+    <div class="flex-item-AC">Item 7</div>
+    <div class="flex-item-AC">Item 8</div>
+    <div class="flex-item-AC">Item 9</div>
+    <div class="flex-item-AC">Item 10</div>
+    <div class="flex-item-AC">Item 11</div>
+    <div class="flex-item-AC">Item 12</div>
+    <div class="flex-item-AC">Item 13</div>
+    <div class="flex-item-AC">Item 14</div>
+</div>
+<br><br>
+<h1>~ Align Content ~</h1>
+When multiple rows or columns of flex items are present, the spacing of these lines of items may be controlled along the cross axis by targeting the align-content property:
+<br>
+flex-wrap: wrap; height: 15em; align-content: flex-start;
+<div class="flex-container-AD">
+    <div class="flex-item-AD">Item 1</div>
+    <div class="flex-item-AD">Item 2</div>
+    <div class="flex-item-AD">Item 3</div>
+    <div class="flex-item-AD">Item 4</div>
+    <div class="flex-item-AD">Item 5</div>
+    <div class="flex-item-AD">Item 6</div>
+    <div class="flex-item-AD">Item 7</div>
+    <div class="flex-item-AD">Item 8</div>
+    <div class="flex-item-AD">Item 9</div>
+    <div class="flex-item-AD">Item 10</div>
+    <div class="flex-item-AD">Item 11</div>
+    <div class="flex-item-AD">Item 12</div>
+    <div class="flex-item-AD">Item 13</div>
+    <div class="flex-item-AD">Item 14</div>
+</div>
+<br><br>
+<div class="flex-container-AE">
+    <div class="flex-item-AE">Item 1</div>
+    <div class="flex-item-AE">Item 2</div>
+    <div class="flex-item-AE">Item 3</div>
+    <div class="flex-item-AE">Item 4</div>
+    <div class="flex-item-AE">Item 5</div>
+    <div class="flex-item-AE">Item 6</div>
+    <div class="flex-item-AE">Item 7</div>
+    <div class="flex-item-AE">Item 8</div>
+    <div class="flex-item-AE">Item 9</div>
+    <div class="flex-item-AE">Item 10</div>
+    <div class="flex-item-AE">Item 11</div>
+    <div class="flex-item-AE">Item 12</div>
+    <div class="flex-item-AE">Item 13</div>
+    <div class="flex-item-AE">Item 14</div>
+</div>
+<br><br>
+<div class="flex-container-AF">
+    <div class="flex-item-AF">Item 1</div>
+    <div class="flex-item-AF">Item 2</div>
+    <div class="flex-item-AF">Item 3</div>
+    <div class="flex-item-AF">Item 4</div>
+    <div class="flex-item-AF">Item 5</div>
+    <div class="flex-item-AF">Item 6</div>
+    <div class="flex-item-AF">Item 7</div>
+    <div class="flex-item-AF">Item 8</div>
+    <div class="flex-item-AF">Item 9</div>
+    <div class="flex-item-AF">Item 10</div>
+    <div class="flex-item-AF">Item 11</div>
+    <div class="flex-item-AF">Item 12</div>
+    <div class="flex-item-AF">Item 13</div>
+    <div class="flex-item-AF">Item 14</div>
+</div>
+<br><br>
+
+
+
 </body>
 </html>
