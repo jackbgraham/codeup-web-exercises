@@ -370,10 +370,10 @@ body {
 }
 .flex-container-AD {
     width: 60%;
+    height: 150px;
     border: 3px solid goldenrod;
     display: flex;
     flex-wrap: wrap;
-    height: 15em;
     align-content: flex-start;
 }
 .flex-item-AD {
@@ -383,9 +383,11 @@ body {
 }
 .flex-container-AE {
     width: 60%;
+    height: 150px;
     border: 3px solid goldenrod;
     display: flex;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
+    align-content: center;
 }
 .flex-item-AE {
     background: #BFD45D;
@@ -394,9 +396,11 @@ body {
 }
 .flex-container-AF {
     width: 60%;
+    height: 150px;
     border: 3px solid goldenrod;
     display: flex;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
+    align-content: space-evenly;
 }
 .flex-item-AF {
     background: #BFD45D;
