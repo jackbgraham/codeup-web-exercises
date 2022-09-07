@@ -88,9 +88,120 @@ The default is to minimize the content of the items and stack them in a left-ali
     <div class="flex-item-K">Item 3</div>
 </div>
 <br><br>
-<h1>~ c-c-c-combo ~</h1>
+<h1>~ c-c-c-combo ~ flex-direction and justify-content ~</h1>
 <br><br>
-
-
+<h3> Container with CSS declaration "flex-drection: column; justify-content: flex-start;". </h3>
+<div class="flex-container-L">
+    <div class="flex-item-L">Item 1</div>
+    <div class="flex-item-L">Item 2</div>
+    <div class="flex-item-L">Item 3</div>
+</div>
+<br><br>
+<h3> Container with CSS declaration "flex-drection: column; justify-content: flex-end;". </h3>
+<div class="flex-container-M">
+    <div class="flex-item-M">Item 1</div>
+    <div class="flex-item-M">Item 2</div>
+    <div class="flex-item-M">Item 3</div>
+</div>
+<br><br>
+<h3> Container with CSS declaration "flex-drection: column; justify-content: center;". </h3>
+<div class="flex-container-N">
+    <div class="flex-item-N">Item 1</div>
+    <div class="flex-item-N">Item 2</div>
+    <div class="flex-item-N">Item 3</div>
+</div>
+<br><br>
+<h3> Container with CSS declaration "flex-drection: column; justify-content: space-between;". </h3>
+<div class="flex-container-O">
+    <div class="flex-item-O">Item 1</div>
+    <div class="flex-item-O">Item 2</div>
+    <div class="flex-item-O">Item 3</div>
+</div>
+<br><br>
+<h3> Container with CSS declaration "flex-drection: column; justify-content: space-around;". </h3>
+<div class="flex-container-P">
+    <div class="flex-item-P">Item 1</div>
+    <div class="flex-item-P">Item 2</div>
+    <div class="flex-item-P">Item 3</div>
+</div>
+<br><br>
+<h3> Container with CSS declaration "flex-drection: column; justify-content: space-evenly". </h3>
+<div class="flex-container-Q">
+    <div class="flex-item-Q">Item 1</div>
+    <div class="flex-item-Q">Item 2</div>
+    <div class="flex-item-Q">Item 3</div>
+</div>
+<br><br>
+Notice that in all cases, the individual items stretch along the cross axis. This behavior can be controlled with align-items.
+<br><br>
+<h1>~ Align Items ~</h1>
+<h3> align-items: flex-start; <br> height: 5em; </h3>
+<div class="flex-container-R">
+    <div class="flex-item-R">Item 1</div>
+    <div class="flex-item-R">Item 2</div>
+    <div class="flex-item-R">Item 3</div>
+</div>
+<br><br>
+<h3> align-items: flex-end; <br> height: 5em; </h3>
+<div class="flex-container-S">
+    <div class="flex-item-S">Item 1</div>
+    <div class="flex-item-S">Item 2</div>
+    <div class="flex-item-S">Item 3</div>
+</div>
+<br><br>
+<h3> align-items: stretch; <br> height: 5em; </h3>
+<div class="flex-container-T">
+    <div class="flex-item-T">Item 1</div>
+    <div class="flex-item-T">Item 2</div>
+    <div class="flex-item-T">Item 3</div>
+</div>
+<br><br>
+<h3> align-items: center; <br> height: 5em; </h3>
+<div class="flex-container-U">
+    <div class="flex-item-U">Item 1</div>
+    <div class="flex-item-U">Item 2</div>
+    <div class="flex-item-U">Item 3</div>
+</div>
+<br><br>
+<h3> flex-direction: column; <br> align-items: flex-start; </h3>
+<div class="flex-container-V">
+    <div class="flex-item-V">Item 1</div>
+    <div class="flex-item-V">Item 2</div>
+    <div class="flex-item-V">Item 3</div>
+</div>
+<br><br>
+<h3> flex-direction: column; <br> align-items: flex-end; </h3>
+<div class="flex-container-W">
+    <div class="flex-item-W">Item 1</div>
+    <div class="flex-item-W">Item 2</div>
+    <div class="flex-item-W">Item 3</div>
+</div>
+<br><br>
+<h3> flex-direction: column; <br> align-items: stretch; </h3>
+<div class="flex-container-X">
+    <div class="flex-item-X">Item 1</div>
+    <div class="flex-item-X">Item 2</div>
+    <div class="flex-item-X">Item 3</div>
+</div>
+<br><br>
+<h3> flex-direction: column; <br> align-items: center; </h3>
+<div class="flex-container-Y">
+    <div class="flex-item-Y">Item 1</div>
+    <div class="flex-item-Y">Item 2</div>
+    <div class="flex-item-Y">Item 3</div>
+</div>
+<br><br>
+Another interesting value for align-items is baseline. This one is useful when the flex items have different heights and we want to center them using their text.
+<br>
+In the following example we're adding a different class with a different font size for every flex item. And we're aligning the items using its baseline.
+<br>
+<div class="flex-container-Z">
+    <div class="flex-item-Z1">Item 1</div>
+    <div class="flex-item-Z2">Item 2</div>
+    <div class="flex-item-Z3">Item 3</div>
+    <div class="flex-item-Z4">Item 4</div>
+    <div class="flex-item-Z5">Item 5</div>
+</div>
+<br><br>
 </body>
 </html>

@@ -124,3 +124,214 @@ body {
     border: 2px solid #F9EFD6;
     padding: 1em;
 }
+.flex-container-L {
+    width: 100%;
+    height: 200px;
+    border: 3px solid goldenrod;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+.flex-item-L {
+    background: #BFD45D;
+    border: 2px solid #F9EFD6;
+    padding: 1em;
+}
+.flex-container-M {
+    width: 100%;
+    height: 200px;
+    border: 3px solid goldenrod;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.flex-item-M {
+    background: #BFD45D;
+    border: 2px solid #F9EFD6;
+    padding: 1em;
+}
+.flex-container-N {
+    width: 100%;
+    height: 200px;
+    border: 3px solid goldenrod;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+.flex-item-N {
+    background: #BFD45D;
+    border: 2px solid #F9EFD6;
+    padding: 1em;
+}
+.flex-container-O {
+    width: 100%;
+    height: 300px;
+    border: 3px solid goldenrod;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.flex-item-O {
+    background: #BFD45D;
+    border: 2px solid #F9EFD6;
+    padding: 1em;
+}
+.flex-container-P {
+    width: 100%;
+    height: 300px;
+    border: 3px solid goldenrod;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.flex-item-P {
+    background: #BFD45D;
+    border: 2px solid #F9EFD6;
+    padding: 1em;
+}
+.flex-container-Q {
+    width: 100%;
+    height: 300px;
+    border: 3px solid goldenrod;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.flex-item-Q {
+    background: #BFD45D;
+    border: 2px solid #F9EFD6;
+    padding: 1em;
+}
+.flex-container-R {
+    width: 100%;
+    border: 3px solid goldenrod;
+    display: flex;
+    align-items: flex-start;
+    height: 5em;
+}
+.flex-item-R {
+    background: #BFD45D;
+    border: 2px solid #F9EFD6;
+    padding: 1em;
+}
+.flex-container-S {
+    width: 100%;
+    border: 3px solid goldenrod;
+    display: flex;
+    align-items: flex-end;
+    height: 5em;
+}
+.flex-item-S {
+    background: #BFD45D;
+    border: 2px solid #F9EFD6;
+    padding: 1em;
+}
+.flex-container-T {
+    width: 100%;
+    border: 3px solid goldenrod;
+    display: flex;
+    align-items: stretch;
+    height: 5em;
+}
+.flex-item-T {
+    background: #BFD45D;
+    border: 2px solid #F9EFD6;
+    padding: 1em;
+}
+.flex-container-U {
+    width: 100%;
+    border: 3px solid goldenrod;
+    display: flex;
+    align-items: center;
+    height: 5em;
+}
+.flex-item-U {
+    background: #BFD45D;
+    border: 2px solid #F9EFD6;
+    padding: 1em;
+}
+.flex-container-V {
+    width: 100%;
+    border: 3px solid goldenrod;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.flex-item-V {
+    background: #BFD45D;
+    border: 2px solid #F9EFD6;
+    padding: 1em;
+}
+.flex-container-W {
+    width: 100%;
+    border: 3px solid goldenrod;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.flex-item-W {
+    background: #BFD45D;
+    border: 2px solid #F9EFD6;
+    padding: 1em;
+}
+.flex-container-X {
+    width: 100%;
+    border: 3px solid goldenrod;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.flex-item-X {
+    background: #BFD45D;
+    border: 2px solid #F9EFD6;
+    padding: 1em;
+}
+.flex-container-Y {
+    width: 100%;
+    border: 3px solid goldenrod;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flex-item-Y {
+    background: #BFD45D;
+    border: 2px solid #F9EFD6;
+    padding: 1em;
+}
+.flex-container-Z {
+    display: flex;
+    align-items: baseline;
+    border: 5px solid goldenrod;
+    height: 50vh;
+}
+.flex-item-Z1 {
+    background: #BFD45D;
+    border: 2px solid #F9EFD6;
+    padding: 1em;
+    font-size: 15px;
+}
+.flex-item-Z2 {
+    background: #BFD45D;
+    border: 2px solid #F9EFD6;
+    padding: 1em;
+    font-size: 30px;
+}
+.flex-item-Z3 {
+    background: #BFD45D;
+    border: 2px solid #F9EFD6;
+    padding: 1em;
+    font-size: 45px;
+}
+.flex-item-Z4 {
+    background: #BFD45D;
+    border: 2px solid #F9EFD6;
+    padding: 1em;
+    font-size: 60px;
+}
+.flex-item-Z5 {
+    background: #BFD45D;
+    border: 2px solid #F9EFD6;
+    padding: 1em;
+    font-size: 75px;
+}
