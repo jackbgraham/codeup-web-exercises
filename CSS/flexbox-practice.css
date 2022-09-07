@@ -58,3 +58,69 @@ body {
     border: 2px solid #F9EFD6;
     padding: 1em;
 }
+.flex-container-F {
+    width: 100%;
+    border: 3px solid goldenrod;
+    display: flex;
+    justify-content: flex-start;
+}
+.flex-item-F {
+    background: #BFD45D;
+    border: 2px solid #F9EFD6;
+    padding: 1em;
+}
+.flex-container-G {
+    width: 100%;
+    border: 3px solid goldenrod;
+    display: flex;
+    justify-content: flex-end;
+}
+.flex-item-G {
+    background: #BFD45D;
+    border: 2px solid #F9EFD6;
+    padding: 1em;
+}
+.flex-container-H {
+    width: 100%;
+    border: 3px solid goldenrod;
+    display: flex;
+    justify-content: center;
+}
+.flex-item-H {
+    background: #BFD45D;
+    border: 2px solid #F9EFD6;
+    padding: 1em;
+}
+.flex-container-I {
+    width: 100%;
+    border: 3px solid goldenrod;
+    display: flex;
+    justify-content: space-between;
+}
+.flex-item-I {
+    background: #BFD45D;
+    border: 2px solid #F9EFD6;
+    padding: 1em;
+}
+.flex-container-J {
+    width: 100%;
+    border: 3px solid goldenrod;
+    display: flex;
+    justify-content: space-around;
+}
+.flex-item-J {
+    background: #BFD45D;
+    border: 2px solid #F9EFD6;
+    padding: 1em;
+}
+.flex-container-K {
+    width: 100%;
+    border: 3px solid goldenrod;
+    display: flex;
+    justify-content: space-evenly;
+}
+.flex-item-K {
+    background: #BFD45D;
+    border: 2px solid #F9EFD6;
+    padding: 1em;
+}
