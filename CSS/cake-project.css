@@ -1,0 +1,32 @@
+/*.seersucker-mint */
+.seersucker-mint {
+    background-image: repeating-linear-gradient(120deg, #D5FCDF, white 10px, #D5FCDF 10px, white 10px);
+    height: 8em;
+    max-width: 100%;
+
+    font-size: 1.4em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+
+}
+a {
+    padding: 1em;
+}
+
+a:link {
+    color: #E678F1;
+}
+
+a:visited {
+    color: #E678F1;
+}
+
+a:hover {
+    color: #9978F1;
+}
+
+a:active {
+    color: #E678F1;
+}

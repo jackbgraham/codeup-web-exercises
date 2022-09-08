@@ -1,30 +1,13 @@
-nav {
-    display: flex;
-    background-color: rgba(193, 193, 193, 85%);
-    font-family: 'Work Sans', sans-serif;
-}
+* {
 
-nav * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: gray;
 }
 
-a {
-    color: black;
-    text-decoration: none;
-    display: inline-block;
-    padding: 0.5em;
-}
-
-a:hover {
-    color: blue;
-}
-
-section:first-of-type {
-
-}
-section:nth-of-type(2) {
-
-}
-section:last-of-type {
-
+li a button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 
 }
