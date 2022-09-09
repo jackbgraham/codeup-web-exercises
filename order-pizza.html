@@ -139,8 +139,112 @@
     </div>
     <div class="tab-pane fade" id="dos" role="tabpanel" aria-labelledby="dos-tab">
 
+      <div class="card">
+        <h5 class="card-header bg-primary text-white">Choose Cheese and Sauce</h5>
+        <div class="card-body">
+          <div class="card" style="width: 25rem;">
+            <div class="card-header">
+              Cheese
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">How much?</li>
+              <li class="list-group-item"><select name="cheese" id="cheese">
+                <option value="standard">standard</option>
+                <option value="extra">extra</option>
+                <option value="double">double</option>
+                <option value="no-cheese">none</option>
+              </select></li>
+            </ul>
+          </div>
+          <br>
+          <div class="card" style="width: 25rem;">
+            <div class="card-header">
+              Sauce
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">What type?</li>
+              <li class="list-group-item"><select name="sauce1" id="sauce1">
+                <option value="classic">classic</option>
+                <option value="hearty">hearty marinara</option>
+                <option value="alfredo">alfredo</option>
+                <option value="garlicparm">garlic parmesan</option>
+                <option value="bbq">bar-b-que</option>
+              </select></li>
+              <li class="list-group-item">How much?</li>
+              <li class="list-group-item"><select name="sauce2" id="sauce2">
+                <option value="standard">standard</option>
+                <option value="extra">extra</option>
+                <option value="light">light</option>
+                <option value="no-sauce">none</option>
+              </select></li>
+
+            </ul>
+          </div>
+
+          <br>
+
+          <h5 class="card-header text-end"><a href="#" class="btn btn-primary">< Previous</a> <a href="#" class="btn btn-primary">Next ></a></h5>
+        </div>
+      </div>
+
     </div>
     <div class="tab-pane fade" id="tres" role="tabpanel" aria-labelledby="tres-tab">
+
+      <div class="card">
+        <h5 class="card-header bg-primary text-white">Choose Toppings</h5>
+        <div class="card-body">
+          <div class="card" style="width: 25rem;">
+            <div class="card-header">
+              Hand Tossed
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Choose your Meats.</li>
+              <li class="list-group-item"><input type="radio" id="meat1" name="pep" value="pepperoni" unchecked>
+                <label for="meat1">pepperoni</label></li>
+              <li class="list-group-item"><input type="radio" id="meat2" name="sau" value="italiansausage" unchecked>
+                <label for="meat2">italian sausage</label></li>
+              <li class="list-group-item"><input type="radio" id="meat3" name="bee" value="beef" unchecked>
+                <label for="meat3">beef</label></li>
+              <li class="list-group-item"><input type="radio" id="meat4" name="ham" value="ham" unchecked>
+                <label for="meat4">ham</label></li>
+              <li class="list-group-item"><input type="radio" id="meat5" name="chi" value="chicken" unchecked>
+                <label for="meat5">chicken</label></li>
+              <li class="list-group-item"><input type="radio" id="meat6" name="bac" value="bacon" unchecked>
+                <label for="meat6">bacon</label></li>
+            </ul>
+          </div>
+          <br>
+          <div class="card" style="width: 25rem;">
+            <div class="card-header">
+              Crispy Thin
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Choose your veggies.</li>
+              <li class="list-group-item"><input type="radio" id="veg1" name="jal" value="jalepeno" unchecked>
+                <label for="veg1">jalepeno</label></li>
+              <li class="list-group-item"><input type="radio" id="veg2" name="oli" value="blackolive" unchecked>
+                <label for="veg2">black olives</label></li>
+              <li class="list-group-item"><input type="radio" id="veg3" name="pin" value="pinapple" unchecked>
+                <label for="veg3">pineapple</label></li>
+              <li class="list-group-item"><input type="radio" id="veg4" name="mus" value="mushroom" unchecked>
+                <label for="veg4">mushroom</label></li>
+              <li class="list-group-item"><input type="radio" id="veg5" name="art" value="artichoke" unchecked>
+                <label for="veg5">artichoke</label></li>
+              <li class="list-group-item"><input type="radio" id="veg6" name="spi" value="spinach" unchecked>
+                <label for="veg6">spinach</label></li>
+              <li class="list-group-item"><input type="radio" id="veg7" name="tom" value="tomato" unchecked>
+                <label for="veg7">tomato</label></li>
+              <li class="list-group-item"><input type="radio" id="veg8" name="gar" value="garlic" unchecked>
+                <label for="veg8">garlic</label></li>
+            </ul>
+          </div>
+
+          <br>
+
+          <h5 class="card-header text-end"><a href="#" class="btn btn-primary">Checkout <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check-fill" viewBox="0 0 16 16">
+            <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z"/>
+          </svg></a></h5>
+        </div>
 
     </div>
   </div>
