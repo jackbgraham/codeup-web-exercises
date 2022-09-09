@@ -30,3 +30,9 @@ a:hover {
 a:active {
     color: #E678F1;
 }
+
+.color-bar {
+    background-color: #9978F1;
+    height: 8em;
+    max-width: 100%;
+}
