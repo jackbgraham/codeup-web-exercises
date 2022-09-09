@@ -11,6 +11,7 @@
 h1 {
     color: blue;
     text-decoration: underline;
+    /*text-align: center;*/
 }
 
 /* selector for all "em" elements */
@@ -27,4 +28,10 @@ em {
     that are a direct child of an element with class="article" */
 a {
     float:right;
+}
+
+body{
+    background-color: paleturquoise;
+    background-image: url("../img/pusheenbox.png");
+    background-repeat: no-repeat;
 }
