@@ -1,3 +1,5 @@
+/*https://java.codeup.com/html-css/css-i/positioning/*/
+
 :root {
     --main-bg: #E6ECF0;
     --link-color: #3B94D9;
@@ -27,12 +29,16 @@ a {
 }
 .top-nav {
     background: var(--light-bg);
-
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 .nav {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 
@@ -47,6 +53,34 @@ a {
 .profile {
     background: var(--light-bg);
 }
+.profile-image {
+    position: absolute;
+    top: 8em;
+}
+
+.profile-form {
+    float: right;
+    line-height: 80px;
+}
+
+.profile-details, .who-to-follow {
+    width: calc(25% - 1em);
+}
+
+.profile-details, .timeline, .who-to-follow {
+    float: left;
+    margin: 0 .5em;
+}
+
+.profile-entry {
+    margin: 0.5em;
+}
+
+.profile-items {
+    list-style: none;
+    padding: 0;
+}
+
 .btn {
     border: 1px solid var(--main-link-color);
     color: var(--main-link-color);
@@ -70,3 +104,25 @@ a {
     color: var(--main-link-color);
 }
 
+.timeline {
+    width: calc(50% - 1em);
+}
+
+.media {
+    width: 100%;
+    background-color: var(--light-bg);
+    border-bottom: 1px solid var(--separator-color);
+    padding: .5em;
+    overflow: auto;
+}
+
+.media-image {
+    max-width: 50px;
+    margin-top: 1.33em;
+    float: left;
+}
+
+.media-body {
+    float: left;
+    width: calc(100% - 50px);
+}
