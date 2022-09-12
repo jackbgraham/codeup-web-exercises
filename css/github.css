@@ -1,0 +1,11 @@
+nav {
+    background-color: black;
+    color: white;
+    display:flex;
+    align-items: flex-start, center;
+
+}
+ nav section a {
+     color: white;
+     text-decoration: none;
+ }
