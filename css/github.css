@@ -5,7 +5,55 @@ nav {
     align-items: flex-start, center;
 
 }
+
+nav section {
+    padding: 2rem;
+}
+
  nav section a {
-     color: white;
+     color: lightgray;
      text-decoration: none;
+     font-size: 1.3rem;
+     padding: 1rem;
  }
+
+ body {
+     background-color: lightgray;
+ }
+
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 15%;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
+
+#Home {background-color: red;}
+#News {background-color: green;}
+#Contact {background-color: blue;}
+#About {background-color: orange;}
