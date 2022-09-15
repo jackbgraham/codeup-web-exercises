@@ -41,15 +41,27 @@
     document.getElementById("sub-header").style.color = "blue";
 
     // TODO: Uncomment the next line and get all list items
-    var listItems = ;
+    var listItems = document.querySelectorAll("li");
 
     // TODO: Set text color on every other list item to grey
     // TODO: Set text color of li with dbid = 1 to blue
+    for (let i = 0; i < listItems.length; i++) {
+      if(i == 1) {
+        listItems[i].style.color = "blue";
+      } else {
+        listItems[i].style.color = "grey";
+      }
+    }
 
     // TODO: Uncomment the next line and get all elements with class name sub-paragraph
-    // var subParagraphs = ;
+    var subParagraphs = document.getElementsByClassName("sub-paragraph"); //this makes an array
 
     // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
+    // subParagraphs.innerHTML = "Mission Accomplished!"; doesn't work
+    // document.getElementsByTagName("p").innerHTML = "Mission Accomplished!"; doesn't work
+    subParagraphs[0].innerHTML = "Mission Accomplished!"; //you have to add the index number
+
+
   })();
 </script>
 
