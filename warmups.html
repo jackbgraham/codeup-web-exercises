@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<div id="Web_1920__1">
+    <svg class="Rectangle_1">
+        <rect id="Rectangle_1" rx="0" ry="0" x="0" y="0" width="1920" height="229">
+            tetxt text text text
+        </rect>
+    </svg>
+    <svg class="Rectangle_2">
+        <rect id="Rectangle_2" rx="0" ry="0" x="0" y="0" width="913" height="332">
+            tetxt text text text
+        </rect>
+    </svg>
+    <svg class="Rectangle_3">
+        <rect id="Rectangle_3" rx="0" ry="0" x="0" y="0" width="913" height="332">
+            tetxt text text text
+        </rect>
+    </svg>
+    <svg class="Rectangle_4">
+        <rect id="Rectangle_4" rx="0" ry="0" x="0" y="0" width="913" height="332">
+            tetxt text text text
+        </rect>
+    </svg>
+    <svg class="Rectangle_5">
+        <rect id="Rectangle_5" rx="0" ry="0" x="0" y="0" width="844" height="711">
+            tetxt text text text
+        </rect>
+    </svg>
+</div>
+
+
+
+
+<script>
+    const attendance = {
+      miami: 32789,
+      buffalo: 45678,
+      portland: 24567
+    }
+
+    //given the attendance object, write a function that returns the total attendance across all teams
+
+    // console.log(attendance.miami);
+
+    // function totalAttendance(){
+    //   let total = attendance.miami + attendance.buffalo + attendance.portland;
+    //   console.log(total);
+    // }
+
+    function totalAttendance(attendObj){
+      let attendanceArray = Object.values(attendObj);
+      let total = 0;
+
+      for (let i = 0; i < attendanceArray.length; i++){
+        total += attendanceArray[i];
+      }
+      return total;
+    }
+
+    console.log('The total number of attendees is ' + totalAttendance(attendance) + '.');
+
+    //given the attendance object, write a function that returns average attendance
+
+    function avgAttendance(attendObj){
+      let attendanceArray = Object.values(attendObj);
+      let total = 0;
+
+      for (let i = 0; i < attendanceArray.length; i++){
+        total += attendanceArray[i];
+      }
+      return parseFloat(total / 3).toFixed(2);
+    }
+
+    console.log('The average number of attendees is ' + avgAttendance(attendance)+ '.');
+
+
+  </script>
+
+</body>
+</html>

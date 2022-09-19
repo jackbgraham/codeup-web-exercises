@@ -25,7 +25,8 @@
   culpa qui officia deserunt mollit anim id est laborum.
 </p>
 
-<button>button1</button>
+<button>The Button</button>
+
 <button>button2</button>
 <button>button3</button>
 <button>button4</button>
@@ -66,6 +67,19 @@
     // document.getElementsByTagName("p").innerHTML = "Mission Accomplished!"; doesn't work
     subParagraphs[0].innerHTML = "Mission Accomplished!"; //you have to add the index number
 
+  let theButton = document.querySelector("button");
+
+  let counter = 0;
+
+  let buttonClickFunction = function () {
+    counter++;
+    console.log(counter);
+    if (counter % 2 === 0) {
+      document.querySelector('p').innerText = counter + " is an even number";
+    } else {
+      document.querySelector('p').innerText = counter + "is an odd number";
+    }
+  }
 
   })();
 </script>
