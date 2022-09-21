@@ -18,4 +18,4 @@ $('.codeup').css({'border': '1px solid red', 'width': 'fit-content'});
 
 $('li').css('font-size', '20px');
 
-$('h1, p').css({'background-color': '#FFFF00'});
+$('h1, p, li').css({'background-color': '#FFFF00'});
