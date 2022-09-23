@@ -2,3 +2,5 @@
 *.iml
 .DS_Store
 keys.js
+
+#always put keys in the gitignore
