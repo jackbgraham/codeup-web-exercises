@@ -13,6 +13,9 @@ $(function(){
         'font-size': '16px'
     });
 
+    $('#hidden').css({
+        'visibility': 'hidden'
+    });
 
 
 });
