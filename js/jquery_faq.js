@@ -128,6 +128,22 @@ $(function(){
             $('#toggle10').toggle();
         });
 
+    $("#hN").on(
+        'click', function(){
+            // alert('You clicked me');
+            $('#nP1').children().last().css('background-color', '#FF0');
+            $('#nP2').children().last().css('background-color', '#FF0');
+            $('#nP3').children().last().css('background-color', '#FF0');
+        });
+
+    $("#h").on(
+        'click', function(){
+            // alert('You clicked me');
+            $('#np1').children().css('font-weight', 'bold');
+
+        });
+
+
     // $("#clickMe").on(
     //     'click', function(){
     //     // alert('You clicked me');
