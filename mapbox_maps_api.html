@@ -55,39 +55,77 @@
     center: [-98.47257813593086, 29.45246130819454]
   });
 
-  var marker1 = new mapboxgl.Marker()
-          .setLngLat([-98.47472, 29.44984])
-          .addTo(map);
+//   var marker1 = new mapboxgl.Marker()
+//           .setLngLat([-98.47472, 29.44984])
+//           .addTo(map);
+//
+//   var popup1 = new mapboxgl.Popup()
+//           .setLngLat([-98.47472, 29.44984])
+//           .setHTML("<p>Fratello's Deli</p>")
+//           // .addTo(map) //if we don't add to map, the popup isn't displayed until the marker is clicked
+//   var fratelloPopup = new mapboxgl.Popup()
+//           .setHTML("<p>Fratello's Deli</p>")
+//   marker1.setPopup(fratelloPopup)
+// /////////////////////////////////////
+//   var marker2 = new mapboxgl.Marker()
+//           .setLngLat([-98.47170, 29.45475])
+//           .addTo(map);
+//
+//   var popup2 = new mapboxgl.Popup()
+//           .setLngLat([-98.47170, 29.45475])
+//           .setHTML("<p>Shake Shack</p>")
+//   var shakePopup = new mapboxgl.Popup()
+//           .setHTML("<p>Shake Shack</p>")
+//   marker2.setPopup(shakePopup)
+//   /////////////////////////////////////
+//   var marker3 = new mapboxgl.Marker()
+//           .setLngLat([-98.47164, 29.45371])
+//           .addTo(map);
+//
+//   var popup3 = new mapboxgl.Popup()
+//           .setLngLat([-98.47164, 29.45371])
+//           .setHTML("<p>Taco Cabana</p>")
+//   var tacoPopup = new mapboxgl.Popup()
+//           .setHTML("<p>Taco Cabana</p>")
+//   marker3.setPopup(tacoPopup)
+//   ///////////////////////////////////
+  const restaurants = [
+    {
+      name: "Fratello's Deli",
+      longitude: "-98.47472",
+      latitude: "29.44984",
+      moreInfo: "Welcome to tiramisu town"
+    },
+    {
+      name: "Shake Shack",
+      longitude: "-98.47170",
+      latitude: "29.45475",
+      moreInfo: "Shakes in a shack"
+    },
+    {
+      name: "Taco Cabana",
+      longitude: "-98.47164",
+      latitude: "29.45371",
+      moreInfo: "A cabana filled with tacos"
+    }
 
-  var popup1 = new mapboxgl.Popup()
-          .setLngLat([-98.47472, 29.44984])
-          .setHTML("<p>Fratello's Deli</p>")
-          // .addTo(map) //if we don't add to map, the popup isn't displayed until the marker is clicked
-  var fratelloPopup = new mapboxgl.Popup()
-          .setHTML("<p>Fratello's Deli</p>")
-  marker1.setPopup(fratelloPopup)
-/////////////////////////////////////
-  var marker2 = new mapboxgl.Marker()
-          .setLngLat([-98.47170, 29.45475])
-          .addTo(map);
+  ]
 
-  var popup2 = new mapboxgl.Popup()
-          .setLngLat([-98.47170, 29.45475])
-          .setHTML("<p>Shake Shack</p>")
-  var shakePopup = new mapboxgl.Popup()
-          .setHTML("<p>Shake Shack</p>")
-  marker2.setPopup(shakePopup)
-  /////////////////////////////////////
-  var marker3 = new mapboxgl.Marker()
-          .setLngLat([-98.47164, 29.45371])
-          .addTo(map);
+map.on('style.load', () => {
+map.setFog({});
 
-  var popup3 = new mapboxgl.Popup()
-          .setLngLat([-98.47164, 29.45371])
-          .setHTML("<p>Taco Cabana</p>")
-  var tacoPopup = new mapboxgl.Popup()
-          .setHTML("<p>Taco Cabana</p>")
-  marker3.setPopup(tacoPopup)
+  restaurants. forEach(restaurant => {
+    let marker = new mapboxgl.Marker()
+            .setLngLat([restaurant.longitude, restaurant.latitude])
+            .addTo(map);
+    const popup = new mapboxgl.Popup()
+            .setHTML(`<p class="mt-3">${restaurant.name}</p><p>${restaurant.moreInfo}`);
+    marker.setPopup(popup);
+  });
+
+});
+
+
 
 
 </script>
