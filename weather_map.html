@@ -27,22 +27,48 @@
 
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light ">
+    <div class="container-fluid">
 
+        <span>Weather App</span>
+
+        <div id="navbarContent">
+
+            <ul class="navbar-nav p-3 text align-content-end">
+                <li class="nav-item">
+                    <span>Current City: (variable) </span>
+                </li>
+                <li class="nav-item">
+                    <span>Temp: (variable) </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<form class="d-flex">
+    <input class="form-control me-2" type="search" placeholder="Place Name" aria-label="Search">
+    <button class="btn btn-outline-success text-nowrap" type="submit">Update Location</button>
+</form>
 <div class="row border">
+
+</div>
+
+<div class="row border" style="width: 100%; height: 650px;">
     <div class="col-3 border">
-        <h4 class="p-4">Weather Status</h4>
-        <p class="p-4">coordinates:</p>
+        <h4 class="p-1">Weather Status</h4>
+        <p class="p-1">coordinates:</p>
 
     </div>
     <div class="col-9 border">
-        <div id='map' class="mx-auto" style="width: 100%; height: 600px;"></div>
+        <div id='map' class="mx-auto" style="width: 100%; height: 500px;"></div>
         <script>
             mapboxgl.accessToken = MAPBOX_API_TOKEN;
             var map = new mapboxgl.Map({
                 container: 'map',
                 style: 'mapbox://styles/mapbox/streets-v9',
-                zoom: 15,
-                center: [-98.47257813593086, 29.45246130819454]
+                zoom: 11,
+                center: [-98.49205561751022, 29.420435628006057]
             });
         </script>
     </div>
