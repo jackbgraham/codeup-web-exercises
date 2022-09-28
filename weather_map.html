@@ -30,7 +30,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light ">
     <div class="container-fluid">
 
-        <span>Weather App</span>
+        <h4 class="px-5">Weather App</h4>
 
         <div id="navbarContent">
 
@@ -38,26 +38,33 @@
                 <li class="nav-item">
                     <span>Current City: (variable) </span>
                 </li>
+                <li style="visibility: hidden">
+                    _____
+                </li>
                 <li class="nav-item">
                     <span>Temp: (variable) </span>
+                </li>
+                <li style="visibility: hidden">
+                    ___
                 </li>
             </ul>
         </div>
     </div>
 </nav>
 
-<form class="d-flex">
-    <input class="form-control me-2" type="search" placeholder="Place Name" aria-label="Search">
-    <button class="btn btn-outline-success text-nowrap" type="submit">Update Location</button>
+<form class="d-flex" style="width: 31%; height: 50px;">
+    <input class="form-control me-2" type="search" placeholder="search for a location" aria-label="Search">
+    <button class="btn btn-outline-success text-nowrap" type="submit">Search</button>
 </form>
 <div class="row border">
 
 </div>
 
-<div class="row border" style="width: 100%; height: 650px;">
+<div class="row border" style="width: 100%; height: 500px;">
     <div class="col-3 border">
-        <h4 class="p-1">Weather Status</h4>
-        <p class="p-1">coordinates:</p>
+        <h4 class="p-1">Current Locational Data</h4>
+        <p class="p-1">coordinates:(variable)</p>
+        <p class="p-1">add more stuff here</p>
 
     </div>
     <div class="col-9 border">
@@ -73,7 +80,182 @@
         </script>
     </div>
 </div>
+<div class="row border align-content-end" style="width: 100%; height: 50px;" id="fiveDayForecast">
+    <h4 class="px-5">Five Day Forecast</h4>
+</div>
 
+<div class="row border d-flex justify-content-center" style="width: 100%; height: 200px;" id="cardBox">
+    <div class="col m-2 border" style="width: 18%; height: 180px;" id="wxcard">
+        <table>
+            <tr>
+                <th>
+                    (date time group)
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    (curent temp and wx icon)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    (description)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    (humidity)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    (wind)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    (pressure)
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="col m-2 border" style="width: 18%; height: 180px;" id="wxcard">
+        <table>
+            <tr>
+                <th>
+                    (date time group)
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    (curent temp and wx icon)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    (description)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    (humidity)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    (wind)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    (pressure)
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="col m-2 border" style="width: 18%; height: 180px;" id="wxcard">
+        <table>
+            <tr>
+                <th>
+                    (date time group)
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    (curent temp and wx icon)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    (description)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    (humidity)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    (wind)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    (pressure)
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="col m-2 border" style="width: 18%; height: 180px;" id="wxcard">
+        <table>
+            <tr>
+                <th>
+                    (date time group)
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    (curent temp and wx icon)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    (description)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    (humidity)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    (wind)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    (pressure)
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="col m-2 border" style="width: 18%; height: 180px;" id="wxcard">
+        <table>
+            <tr>
+                <th>
+                    (date time group)
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    (curent temp and wx icon)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    (description)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    (humidity)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    (wind)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    (pressure)
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
 <!--<div id='map' class="mx-auto mt-4" style="width: 90%; height: 600px;"></div>-->
 <!--    <script>-->
 <!--        mapboxgl.accessToken = MAPBOX_API_TOKEN;-->
