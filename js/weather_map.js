@@ -1,24 +1,30 @@
 "use strict";
 $(function(){
-
+    //forecast data
     $.get("https://api.openweathermap.org/data/2.5/forecast", {
         APPID: OPEN_WX_APPID,
         lat: 29.423,
         lon: -98.485,
         units: "imperial"
     }).done(function(data) {
+        console.log("forecast data")
         console.log(data);
     });
 
+    // current wx data
     $.get("https://api.openweathermap.org/data/2.5/weather", {
         APPID: OPEN_WX_APPID,
         lat: 29.423,
         lon: -98.485,
         units: "imperial"
     }).done(function(data) {
+        console.log("current wx data");
         console.log(data);
     });
 
+    // console.log(lngLat);
+
+    //convert azimuth to cardinal directions function
     function windCardinalDirection(degrees){
     let cardinalDirection = '';
     if ((degrees > 348.75 && degrees <= 360) || (degrees >=0 && degrees <= 11.25)){
@@ -84,6 +90,8 @@ function namedDayFromDay(timeStamp){
     let dateTime = new Date(timeStamp * 1000);
     return daysOfWeek[dateTime.getDay()];
 }
+
+
 
 })
 //mapbox notes
