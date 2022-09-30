@@ -66,7 +66,7 @@ $(function(){
         var iconcode = data.weather[0].icon;
         var iconurl = "http://openweathermap.org/img/w/" + iconcode + ".png";
         $(`#locationDisplay1`).html("City: " + data.name + ", " + data.sys.country);
-        $(`#locationDisplay2`).html("Currently: " + data.weather[0].description + " " ).append( `<img src="${iconurl}">`);
+        $(`#locationDisplay2`).html("Currently: " + data.weather[0].description + " " ).append(`<br>`).append( `<img src="${iconurl}">`);
         $(`#locationDisplay3`).html("Visibility: " + data.visibility + "m");
         $(`#locationDisplay4`).html("Wind from the " + windCardinalDirection(data.wind.deg) + " at " + data.wind.speed + "mph");
         $(`#locationDisplay5`).html("Temp: " + data.main.temp + "° F");
@@ -78,15 +78,13 @@ $(function(){
 
     });
 
-function updateLocation(){
+function updateLocation(lng, lat){
     $.get("https://api.openweathermap.org/data/2.5/weather", {
         APPID: OPEN_WX_APPID,
-        lat: markerLocation.lat,
         lon: markerLocation.lng,
+        lat: markerLocation.lat,
         units: "imperial"
-    }).done(function(data) {
-
-    });
+    }).done(function(data) {});
 };
 
 

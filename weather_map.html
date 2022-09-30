@@ -31,7 +31,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light ">
     <div class="container-fluid">
 
-        <h4 class="px-3">Jack's Weather App</h4>
+        <h4 class="px-3">Weather App</h4>
 
         <div id="navbarContent">
 
@@ -141,8 +141,7 @@
                 `Longitude: ${lngLat.lng.toFixed(3)}`
                 + ` double click to set marker location`;
                 //toFixed displays this as a 5 digit grid
-
-                // updateLocation()
+                // updateLocation(lng, lat)
             }
             marker.onload = onDragEnd();
             //updates the mapbox coordinates, event onload
