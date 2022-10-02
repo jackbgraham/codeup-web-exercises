@@ -76,6 +76,7 @@
 
         <div id='map' class="mx-auto" style="width: 100%; height: 500px;"></div>
 
+<!--        this is the grey overlay at the bottom of the map that shows the coordinates-->
         <pre id="coordinates" class="coordinates"></pre>
         <script>
             //access token for mapbox
@@ -86,7 +87,7 @@
 
             //loads the map
             var map = new mapboxgl.Map({
-                container: 'map',
+                container: 'map', // container ID
                 style: 'mapbox://styles/mapbox/streets-v11',
                 center: [-98.492, 29.420],
                 zoom: 10
