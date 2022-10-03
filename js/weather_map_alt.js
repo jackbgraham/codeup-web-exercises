@@ -77,7 +77,7 @@ $(function() {
         // console.log(data.main.temp);
         // console.log(data.wind.speed);
         // console.log(windCardinalDirection(data.wind.deg));
-        $('body').append(`<p>The current temperature is ${data.main.temp}</p>`);
+        // $('body').append(`<p>The current temperature is ${data.main.temp}</p>`);
 
     });
 //forecasted wx data from the open weather map api service
@@ -140,7 +140,7 @@ $(function() {
     function onDragEnd() {
         lngLat = marker.getLngLat();
         coordinates.style.display = 'block';
-        coordinates.innerHTML = `Latitude: ${lngLat.lat.toFixed(3)}` + ', ' + `Longitude: ${lngLat.lng.toFixed(3)}` + ` double click to set marker location`; //toFixed displays this as a 5 digit grid
+        coordinates.innerHTML = ` Double click to set marker location. current: ` + `Latitude: ${lngLat.lat.toFixed(3)}` + ', ' + `Longitude: ${lngLat.lng.toFixed(3)}`; //toFixed displays this as a 5 digit grid
         console.log( "marker at " + lngLat.lat, lngLat.lng);
         updateWx();
     }
@@ -154,7 +154,7 @@ $(function() {
             lngLat = marker.getLngLat();
             console.log( "marker at " + lngLat.lat, lngLat.lng);
             coordinates.style.display = 'block';
-            coordinates.innerHTML = `Latitude: ${lngLat.lat.toFixed(3)}` + ', ' + `Longitude: ${lngLat.lng.toFixed(3)}` + ` double click to set marker location`;
+            coordinates.innerHTML = ` Double click to set marker location. current: ` + `Latitude: ${lngLat.lat.toFixed(3)}` + ', ' + `Longitude: ${lngLat.lng.toFixed(3)}`; ;
             updateWx();
         });
 
@@ -173,8 +173,16 @@ console.log( "this is center " + lngLat.lat, lngLat.lng);
             lon: lngLat.lng,
             units: "imperial"
         }).done(function (data) {
-            $('body').append(`<p>The current temperature is ${data.main.temp}</p>`);
-
+            //for the current wx icon
+            var iconcode = data.weather[0].icon;
+            var iconurl = "http://openweathermap.org/img/w/" + iconcode + ".png";
+            $(`#locationDisplay1`).html("City: " + data.name + ", " + data.sys.country);
+            $(`#locationDisplay2`).html("Currently: " + data.weather[0].description + " " ).append(`<br>`).append( `<img src="${iconurl}">`);
+            $(`#locationDisplay3`).html("Visibility: " + data.visibility + "m");
+            $(`#locationDisplay4`).html("Wind from the " + windCardinalDirection(data.wind.deg) + " at " + data.wind.speed + "mph");
+            $(`#locationDisplay5`).html("Current Temp: " + data.main.temp + "° F");
+            $(`#locationDisplay6`).html("Range: " + data.main.temp_min + "° F - " + data.main.temp_max + "° F");
+            $(`#locationDisplay7`).html("Humidity: " + data.main.humidity + "%rh");
         });
 //forecasted wx data from the open weather map api service
         $.get("http://api.openweathermap.org/data/2.5/forecast/", {
