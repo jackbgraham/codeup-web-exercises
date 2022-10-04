@@ -40,6 +40,7 @@
 <script src="js/Jacks-JS-Library.js"></script>
 <h1>Warmup time</h1>
 <button id="theOlSwitcheroo">clicky clicky</button>
+<button id="strobe">Pink Blinky</button>
 <script>
     //DOM exercises
     //when the user clicks the button "change heading" the h1 text changes to read "I pwn the DOM"
@@ -47,9 +48,13 @@
 //    $("h1").text("I pwn the DOM");
 // });
 //non jquery, get element by tag name returns a node list, so we need bracket notation to get the first one
-    document.getElementsByTagName("button")[0].addEventListener('click', function(e){
+    document.getElementById("theOlSwitcheroo").addEventListener('click', function(e){
         document.getElementsByTagName(h1)[0].innerHTML = "I pwn the DOM";
     });
+
+    document.getElementById("strobe").addEventListener('click', function (e){
+        document.getElementsByTagName(h1)[0].innerHTML
+    })
 
     // const attendance = {
     //   miami: 32789,

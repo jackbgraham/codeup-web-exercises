@@ -26,4 +26,6 @@ function stringToArray(str){
 
 // this is the spread operator [...str], it converts back and forth between strings and arrays, str here is a placeholder
 
-
+//this copies the data from an array into a new array, so that you can mess with it and not mess with the original
+let array = [1, 2, 3];
+let arrayCopy = JSON.parse(JSON.stringify(array));
