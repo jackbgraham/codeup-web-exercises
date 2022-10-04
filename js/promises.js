@@ -19,3 +19,7 @@ function getUsersLastCommit(username) {
 }
 
 getUsersLastCommit('jackbgraham');
+
+//async functions, you can use "await" to do the same thing as then, but with different syntax
+// let response = await fetch('url')
+//let event = await response
